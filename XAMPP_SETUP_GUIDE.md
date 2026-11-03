@@ -128,14 +128,14 @@ This guide will walk you through setting up and running the Event Management Sys
    - Enter your email and password
    - Click "Sign In"
 
-3. **Creating Events (Organizers Only)**:
+3. **Creating Tournaments (Organizers Only)**:
    - Only organizers can create events
    - Click on "Create Event" in the navigation bar
    - Fill in the event details
    - Click "Create Event"
 
-4. **Exploring Events**:
-   - Click on "Explore Events" to see all upcoming events
+4. **Exploring Tournaments**:
+   - Click on "Explore Tournaments" to see all upcoming events
    - Use filters to find specific events
    - Click on an event to view details
 

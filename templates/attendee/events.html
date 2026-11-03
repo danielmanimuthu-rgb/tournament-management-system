@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
-{% block title %}Explore Events - EventHub{% endblock %}
+{% block title %}Explore Tournaments - TournamentHub{% endblock %}
 
 {% block content %}
 <div class="container py-5">
   <div class="management-heading">
-    <h1>Explore Events</h1>
+    <h1>Explore Tournaments</h1>
     <div class="d-flex">
       <div class="search-form">
         <form method="GET" action="{{ url_for('attendee_events') }}" class="d-flex">
@@ -25,7 +25,7 @@
   
   <!-- Filters -->
   <div class="events-filter-container mb-4">
-    <h5 class="events-filter-title">Filter Events</h5>
+    <h5 class="events-filter-title">Filter Tournaments</h5>
     <form method="GET" action="{{ url_for('attendee_events') }}">
       <div class="row g-3">
         <div class="col-md-4">
@@ -62,7 +62,7 @@
     </form>
   </div>
   
-  <!-- Events Grid -->
+  <!-- Tournaments Grid -->
   <div class="events-grid">
     {% if events and events|length > 0 %}
       {% for event in events %}

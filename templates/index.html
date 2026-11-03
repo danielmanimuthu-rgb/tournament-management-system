@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %}EventHub - Discover Amazing Events{% endblock %}
+{% block title %}TournamentHub - Discover Amazing Tournaments{% endblock %}
 
 {% block content %}
 <!-- Hero Section -->
@@ -8,12 +8,12 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 animate-on-scroll">
-        <h1>Discover and Create Amazing Events</h1>
+        <h1>Discover and Create Amazing Tournaments</h1>
         <p>Join thousands of people attending and organizing events. Find the perfect event for you or create your own event in minutes.</p>
         <div class="d-flex gap-3">
-          <a href="{{ url_for('attendee_events') }}" class="btn btn-light">Explore Events</a>
+          <a href="{{ url_for('attendee_events') }}" class="btn btn-light">Explore Tournaments</a>
           {% if current_user.is_authenticated and current_user.is_organizer() %}
-            <a href="{{ url_for('create_event') }}" class="btn btn-secondary">Create Event</a>
+            <a href="{{ url_for('create_event') }}" class="btn btn-secondary">Create Tournament</a>
           {% elif current_user.is_authenticated and current_user.is_attendee() %}
             <a href="{{ url_for('my_tickets') }}" class="btn btn-secondary">My Tickets</a>
           {% else %}
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="col-lg-6 d-none d-lg-block animate-on-scroll">
-        <img src="https://pixabay.com/get/gab65d49b27d25e5d28944b7aca9fe4337a763d5993eb380556d8146bac58dd3fa07ebd4f12a3dfe1a76ccf4d5a20b4dd2a7516ed4a8fc79ec45c94f0f6ab0f05_1280.jpg" alt="Event Management" class="img-fluid rounded-lg shadow-lg">
+        <img src="static/images/wallpaper.png" alt="Tournament Management" class="img-fluid rounded-lg shadow-lg">
       </div>
     </div>
   </div>
@@ -32,7 +32,7 @@
 <section class="py-5">
   <div class="container">
     <div class="section-heading">
-      <h2>Why Choose EventHub</h2>
+      <h2>Why Choose TournamentHub</h2>
       <p>The all-in-one platform for event management, ticketing, and promotion</p>
     </div>
     
@@ -43,7 +43,7 @@
             <div class="mb-3 text-primary">
               <i class="fas fa-calendar-plus fa-3x"></i>
             </div>
-            <h3 class="card-title h5">Easy Event Creation</h3>
+            <h3 class="card-title h5">Easy Tournament Creation</h3>
             <p class="card-text">Create and manage events with our intuitive interface. Set up tickets, manage registrations, and track attendees all in one place.</p>
           </div>
         </div>
@@ -76,11 +76,11 @@
   </div>
 </section>
 
-<!-- Upcoming Events Section -->
+<!-- Upcoming Tournaments Section -->
 <section class="py-5 bg-light">
   <div class="container">
     <div class="section-heading">
-      <h2>Upcoming Events</h2>
+      <h2>Upcoming Tournaments</h2>
       <p>Discover exciting events happening near you</p>
     </div>
     
@@ -129,17 +129,17 @@
     </div>
     
     <div class="text-center mt-4">
-      <a href="{{ url_for('attendee_events') }}" class="btn btn-primary">View All Events</a>
+      <a href="{{ url_for('attendee_events') }}" class="btn btn-primary">View All Tournaments</a>
     </div>
   </div>
 </section>
 
-<!-- Popular Events Section -->
+<!-- Popular Tournaments Section -->
 <section class="py-5">
   <div class="container">
     <div class="section-heading">
-      <h2>Popular Events</h2>
-      <p>Events that are trending among attendees</p>
+      <h2>Popular Tournaments</h2>
+      <p>Tournaments that are trending among attendees</p>
     </div>
     
     <div class="row g-4">
@@ -201,13 +201,13 @@
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 mb-lg-0">
         <h2>Ready to create your own event?</h2>
-        <p class="lead">Join thousands of organizers using EventHub to create and manage successful events. Our platform makes it easy to set up registration, sell tickets, and track attendance.</p>
+        <p class="lead">Join thousands of organizers using TournamentHub to create and manage successful events. Our platform makes it easy to set up registration, sell tickets, and track attendance.</p>
         <a href="{{ url_for('register', user_type='organizer') }}" class="btn btn-light">Become an Organizer</a>
       </div>
       <div class="col-lg-6">
         <div class="card bg-white p-4 text-dark">
           <div class="card-body">
-            <h3>Why Organize with EventHub?</h3>
+            <h3>Why Organize with TournamentHub?</h3>
             <ul class="list-unstyled mt-4">
               <li class="mb-3 d-flex align-items-center">
                 <i class="fas fa-check-circle text-success me-3 fa-lg"></i>
@@ -242,7 +242,7 @@
   <div class="container">
     <div class="section-heading">
       <h2>What Our Users Say</h2>
-      <p>Hear from organizers and attendees who love using EventHub</p>
+      <p>Hear from organizers and attendees who love using TournamentHub</p>
     </div>
     
     <div class="row">
@@ -258,7 +258,7 @@
                 <i class="fas fa-star"></i>
               </div>
             </div>
-            <p class="card-text fst-italic">"EventHub made organizing my conference a breeze. The ticketing system is intuitive and the attendee management tools are incredibly helpful. Highly recommended!"</p>
+            <p class="card-text fst-italic">"TournamentHub made organizing my conference a breeze. The ticketing system is intuitive and the attendee management tools are incredibly helpful. Highly recommended!"</p>
             <div class="d-flex align-items-center">
               <div>
                 <h6 class="card-title mb-0">Sarah Johnson</h6>
@@ -281,11 +281,11 @@
                 <i class="fas fa-star"></i>
               </div>
             </div>
-            <p class="card-text fst-italic">"I've been using EventHub to find networking events in my industry. The platform is so easy to use and I love the digital tickets feature. No more printing tickets!"</p>
+            <p class="card-text fst-italic">"I've been using TournamentHub to find networking events in my industry. The platform is so easy to use and I love the digital tickets feature. No more printing tickets!"</p>
             <div class="d-flex align-items-center">
               <div>
                 <h6 class="card-title mb-0">Michael Chen</h6>
-                <small class="text-muted">Regular Event Attendee</small>
+                <small class="text-muted">Regular Tournament Attendee</small>
               </div>
             </div>
           </div>
@@ -304,7 +304,7 @@
                 <i class="fas fa-star-half-alt"></i>
               </div>
             </div>
-            <p class="card-text fst-italic">"As an event organizer, I appreciate the detailed analytics EventHub provides. It helps me understand my audience better and improve my workshops. The support team is also amazing!"</p>
+            <p class="card-text fst-italic">"As an event organizer, I appreciate the detailed analytics TournamentHub provides. It helps me understand my audience better and improve my workshops. The support team is also amazing!"</p>
             <div class="d-flex align-items-center">
               <div>
                 <h6 class="card-title mb-0">Olivia Martinez</h6>

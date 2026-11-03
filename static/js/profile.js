@@ -174,7 +174,7 @@ function initProfileCharts() {
     }
   });
   
-  // Upcoming vs Past Events chart (if present)
+  // Upcoming vs Past Tournaments chart (if present)
   const eventsDistributionCanvas = document.getElementById('eventsDistributionChart');
   if (eventsDistributionCanvas) {
     const upcomingTickets = parseInt(eventsDistributionCanvas.getAttribute('data-upcoming') || 0);
@@ -183,7 +183,7 @@ function initProfileCharts() {
     const chart = new Chart(eventsDistributionCanvas, {
       type: 'pie',
       data: {
-        labels: ['Upcoming Events', 'Past Events'],
+        labels: ['Upcoming Tournaments', 'Past Tournaments'],
         datasets: [{
           data: [upcomingTickets, pastTickets],
           backgroundColor: [
@@ -202,7 +202,7 @@ function initProfileCharts() {
           },
           title: {
             display: true,
-            text: 'Upcoming vs Past Events',
+            text: 'Upcoming vs Past Tournaments',
             font: {
               size: 16,
               weight: 'bold'

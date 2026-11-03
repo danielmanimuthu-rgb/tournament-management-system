@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %}Attendee Profile - EventHub{% endblock %}
+{% block title %}Attendee Profile - TournamentHub{% endblock %}
 
 {% block content %}
 <div class="container py-5">
@@ -200,7 +200,7 @@
           
           <div class="list-group-item">
             <div class="d-flex justify-content-between align-items-center">
-              <div><strong>Events Attended</strong></div>
+              <div><strong>Tournaments Attended</strong></div>
               <div>{{ stats.total_tickets }}</div>
             </div>
           </div>
@@ -214,7 +214,7 @@
         <div class="profile-stats">
           <div class="profile-stat">
             <div class="profile-stat-value">{{ stats.total_tickets }}</div>
-            <div class="profile-stat-label">Total Events</div>
+            <div class="profile-stat-label">Total Tournaments</div>
           </div>
           
           <div class="profile-stat">
@@ -243,7 +243,7 @@
           
           <div class="col-md-6">
             <div class="chart-container">
-              <h6 class="text-center mb-3">Upcoming vs Past Events</h6>
+              <h6 class="text-center mb-3">Upcoming vs Past Tournaments</h6>
               <canvas id="eventsDistributionChart" data-upcoming="{{ stats.upcoming_tickets }}" data-past="{{ stats.past_tickets }}"></canvas>
             </div>
           </div>
@@ -258,7 +258,7 @@
           <a href="{{ url_for('attendee_events') }}" class="list-group-item list-group-item-action">
             <div class="d-flex align-items-center">
               <i class="fas fa-search text-primary me-3"></i>
-              <div>Find Events</div>
+              <div>Find Tournaments</div>
             </div>
           </a>
           

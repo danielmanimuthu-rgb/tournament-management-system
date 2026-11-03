@@ -128,7 +128,7 @@ The Event Management System is a comprehensive platform for both event organizer
 3. Fill in the required details
 4. Login using your registered email and password
 
-### Creating Events (Organizers Only)
+### Creating Tournaments (Organizers Only)
 
 1. Log in as an organizer
 2. Navigate to 'Create Event'
@@ -136,14 +136,14 @@ The Event Management System is a comprehensive platform for both event organizer
 4. Set event capacity and pricing
 5. Submit to create your event
 
-### Managing Events
+### Managing Tournaments
 
-- View all your events under 'My Events'
+- View all your events under 'My Tournaments'
 - Edit, delete, and track registration statistics
 
 ### Browsing & Booking (Attendees)
 
-1. Click 'Explore Events' to view all events
+1. Click 'Explore Tournaments' to view all events
 2. Apply filters or search for specific events
 3. Click on an event to see details
 4. Register by clicking 'Get Tickets'
@@ -190,7 +190,7 @@ For first-time users, we've provided a comprehensive guide to set up the applica
 3. Fill in your details and submit
 4. Login using your email and password
 
-### Creating Events (Organizers Only)
+### Creating Tournaments (Organizers Only)
 
 Only organizers have permission to create events:
 
@@ -199,15 +199,15 @@ Only organizers have permission to create events:
 3. Set capacity and pricing options
 4. Submit the form to create your event
 
-### Managing Events (Organizers)
+### Managing Tournaments (Organizers)
 
-1. Go to 'My Events' to see all your created events
+1. Go to 'My Tournaments' to see all your created events
 2. Edit or delete events as needed
 3. View registration statistics
 
-### Browsing and Registering for Events (Attendees)
+### Browsing and Registering for Tournaments (Attendees)
 
-1. Click on 'Explore Events' to browse all available events
+1. Click on 'Explore Tournaments' to browse all available events
 2. Use filters to find specific events
 3. Click on an event to view details
 4. Register for the event by clicking 'Get Tickets'

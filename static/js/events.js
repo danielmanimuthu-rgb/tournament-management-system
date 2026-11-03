@@ -1,4 +1,4 @@
-// Events.js - JavaScript for event-related functions
+// Tournaments.js - JavaScript for event-related functions
 
 document.addEventListener('DOMContentLoaded', function() {
   // Confirmation modal for deleting events

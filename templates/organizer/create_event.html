@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-  {% if edit_mode %}Edit Event{% else %}Create Event{% endif %} - EventHub
+  {% if edit_mode %}Edit Event{% else %}Create Event{% endif %} - TournamentHub
 {% endblock %}
 
 {% block content %}
@@ -9,7 +9,7 @@
   <div class="management-heading">
     <h1>{% if edit_mode %}Edit Event{% else %}Create New Event{% endif %}</h1>
     <a href="{{ url_for('manage_events') }}" class="btn btn-outline-primary">
-      <i class="fas fa-arrow-left me-2"></i> Back to Events
+      <i class="fas fa-arrow-left me-2"></i> Back to Tournaments
     </a>
   </div>
   
@@ -160,7 +160,7 @@
               {% else %}
                 {{ form.price(class="form-control", type="number", min="0", step="0.01") }}
               {% endif %}
-              <div class="form-text">Set to 0 for free events.</div>
+              <div class="form-text">Set to 0 for free tournaments.</div>
             </div>
           </div>
         </div>

@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 
-{% block title %}Register - EventHub{% endblock %}
+{% block title %}Register - TournamentHub{% endblock %}
 
 {% block content %}
 <div class="container py-5">
   <div class="row justify-content-center">
     <div class="col-lg-8">
       <div class="auth-form animate-on-scroll">
-        <h2>Create Your EventHub Account</h2>
+        <h2>Create Your TournamentHub Account</h2>
         
         <div class="auth-tabs mb-4">
           <div class="auth-tab {% if request.args.get('user_type') != 'organizer' %}active{% endif %}" id="attendee-tab">I want to attend events</div>
@@ -174,14 +174,14 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 mb-4 mb-lg-0">
-        <h3>Why Register for EventHub?</h3>
+        <h3>Why Register for TournamentHub?</h3>
         <div class="mt-4">
           <div class="d-flex mb-3">
             <div class="text-primary me-3">
               <i class="fas fa-search fa-2x"></i>
             </div>
             <div>
-              <h5>Discover Events</h5>
+              <h5>Discover Tournaments</h5>
               <p>Find events that match your interests and connect with like-minded individuals.</p>
             </div>
           </div>
@@ -209,14 +209,14 @@
       </div>
       
       <div class="col-lg-6">
-        <h3>For Event Organizers</h3>
+        <h3>For Tournament Organizers</h3>
         <div class="mt-4">
           <div class="d-flex mb-3">
             <div class="text-secondary me-3">
               <i class="fas fa-calendar-plus fa-2x"></i>
             </div>
             <div>
-              <h5>Create Events</h5>
+              <h5>Create Tournaments</h5>
               <p>Easily create and manage events of any size or type with our intuitive tools.</p>
             </div>
           </div>

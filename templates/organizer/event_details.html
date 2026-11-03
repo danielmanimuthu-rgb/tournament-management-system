@@ -1,24 +1,24 @@
 {% extends "layout.html" %}
 
-{% block title %}{{ event.title }} - Event Details{% endblock %}
+{% block title %}{{ event.title }} - Tournament Details{% endblock %}
 
 {% block content %}
 <div class="container py-5">
   <div class="management-heading">
-    <h1>Event Details</h1>
+    <h1>Tournament Details</h1>
     <div class="btn-group">
       <a href="{{ url_for('manage_events') }}" class="btn btn-outline-primary">
-        <i class="fas fa-arrow-left me-2"></i> Back to Events
+        <i class="fas fa-arrow-left me-2"></i> Back to Tournaments
       </a>
       {% if event.is_upcoming() %}
         <a href="{{ url_for('edit_event', event_id=event.id) }}" class="btn btn-outline-secondary">
-          <i class="fas fa-edit me-2"></i> Edit Event
+          <i class="fas fa-edit me-2"></i> Edit Tournament
         </a>
       {% endif %}
     </div>
   </div>
   
-  <!-- Event Details -->
+  <!-- Tournament Details -->
   <div class="event-detail-container">
     <div class="event-detail-header">
       <img src="{{ event.image_url or 'https://pixabay.com/get/g3d6de78ec0d3ff8a2f15cf84c29e13c650c5109ce75d16c59a260335b9813dae2969e117bd9b891fc9922109e5c38bb83ff6771ac276fbeef0292b8ea9f0f44f_1280.jpg' }}" 
@@ -40,9 +40,9 @@
     </div>
     
     <div class="event-detail-content">
-      <!-- Event Stats -->
+      <!-- Tournament Stats -->
       <div class="event-detail-section">
-        <h2 class="event-detail-section-title">Event Statistics</h2>
+        <h2 class="event-detail-section-title">Tournament Statistics</h2>
         
         <div class="event-stats">
           <div class="event-stat-card">
@@ -81,9 +81,9 @@
       
       <div class="row">
         <div class="col-lg-8">
-          <!-- Event Information -->
+          <!-- Tournament Information -->
           <div class="event-detail-section">
-            <h2 class="event-detail-section-title">Event Information</h2>
+            <h2 class="event-detail-section-title">Tournament Information</h2>
             
             <div class="card mb-4">
               <div class="card-body">
@@ -264,10 +264,10 @@
             {% if event.is_upcoming() or event.is_ongoing() %}
               <div class="card">
                 <div class="card-body">
-                  <h5 class="mb-3">Event QR Code</h5>
+                  <h5 class="mb-3">Tournament QR Code</h5>
                   <div class="text-center mb-3">
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{ request.url_root[:-1] + url_for('view_event', event_id=event.id) }}" 
-                         alt="Event QR Code" class="img-fluid">
+                         alt="Tournament QR Code" class="img-fluid">
                   </div>
                   <div class="d-grid">
                     <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data={{ request.url_root[:-1] + url_for('view_event', event_id=event.id) }}" 
@@ -280,9 +280,9 @@
             {% endif %}
           </div>
           
-          <!-- Event Actions -->
+          <!-- Tournament Actions -->
           <div class="event-detail-section">
-            <h2 class="event-detail-section-title">Event Actions</h2>
+            <h2 class="event-detail-section-title">Tournament Actions</h2>
             
             <div class="list-group">
               {% if event.is_upcoming() %}
@@ -290,7 +290,7 @@
                   <div class="d-flex align-items-center">
                     <i class="fas fa-edit text-primary me-3"></i>
                     <div>
-                      <strong>Edit Event</strong>
+                      <strong>Edit Tournament</strong>
                       <div class="small text-muted">Update event details</div>
                     </div>
                   </div>
@@ -302,7 +302,7 @@
                   <div class="d-flex align-items-center">
                     <i class="fas fa-trash-alt text-danger me-3"></i>
                     <div>
-                      <strong>Delete Event</strong>
+                      <strong>Delete Tournament</strong>
                       <div class="small text-muted">Remove this event permanently</div>
                     </div>
                   </div>
@@ -346,12 +346,12 @@
   </div>
 </div>
 
-<!-- Delete Event Modal -->
+<!-- Delete Tournament Modal -->
 <div class="modal fade" id="deleteEventModal" tabindex="-1" aria-labelledby="deleteEventModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="deleteEventModalLabel">Delete Event</h5>
+        <h5 class="modal-title" id="deleteEventModalLabel">Delete Tournament</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -359,7 +359,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-danger">Delete Event</button>
+        <button type="button" class="btn btn-danger">Delete Tournament</button>
       </div>
     </div>
   </div>

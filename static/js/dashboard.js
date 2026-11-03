@@ -26,7 +26,7 @@ function initEventStatsChart() {
     data: {
       labels: ['Total', 'Upcoming', 'Ongoing', 'Past'],
       datasets: [{
-        label: 'Events Count',
+        label: 'Tournaments Count',
         data: [totalEvents, upcomingEvents, ongoingEvents, pastEvents],
         backgroundColor: [
           'rgba(93, 63, 211, 0.7)',  // Primary color (purple)
